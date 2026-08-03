@@ -6,7 +6,7 @@ export async function attachScreenshot(page, name, testInfo) {
   }
 
   await testInfo.attach(name, {
-    body: await page.screenshot(),
+    body: await page.screenshot(),////
     contentType: 'image/png',
   });
 }
